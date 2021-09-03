@@ -1,0 +1,28 @@
+// Soal 3
+
+func main() {
+    // Buat variable buffered channels string
+	// Pass string 1 "Hello" ke variable channel
+	// Pass string 2 "Goroutine" ke variable channel
+	// Tampung kedalam variable messageFirst dan messageLast
+	// Print messageFirst messageLast
+}
+
+
+
+// Soal 4
+func showLastName(name string, wg *sync.WaitGroup) {
+
+	defer wg.Done()
+
+	fmt.Println("Worker is starting..")
+	fmt.Println("My name is : ", name)
+	time.Sleep(100 * time.Millisecond)
+
+	fmt.Println("Worker is done..")
+}
+
+func main() {
+    // Spawn goroutine sejumlah 10 item
+    // Handle spawning goroutine using WaitGroup
+}
